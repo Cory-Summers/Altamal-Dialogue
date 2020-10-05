@@ -1,0 +1,58 @@
+﻿{
+  "Test": {
+    "Entry": "N1",
+    "Ends": [ "N4", "N5" ],
+    "N1": {
+      "Text": "You don't look like your from around here.",
+      "Choices": {
+        "1": {
+          "Text": "I have lived here my whole life",
+          "Node": "N2",
+          "Flags": 0
+        },
+        "2": {
+          "Text": "I came here from Newton.",
+          "Node": "N3",
+          "Flags": 0
+        }
+      }
+    },
+    "N2": {
+      "Text": [ "Oh really?", "Then you must know Mr. Bowler." ],
+      "Choices": {
+        "1": {
+          "Text": "Mr. Bowler is a good friend of mine!",
+          "Node": "N4",
+          "Flags": 4
+        },
+        "2": {
+          "Text": "Who?",
+          "Node": "N5"
+        }
+      }
+    },
+    "N3": {
+      "Text": [ "Newton, eh?", "I have there's trouble brewing down there." ],
+      "Choices": {
+        "1": {
+          "Text": "Did I say Newton? I'm actually from Springville.",
+          "Node": "N2",
+          "Flags": 1
+        },
+        "2": {
+          "Text": "I haven't heard about any trouble.",
+          "Node": "N5",
+          "Flags": 2
+        }
+      }
+    },
+    "N4": {
+      "Text": "You Liar! There's ain't no Mr. Bowler, I made him up!",
+      "Exit": true
+    },
+    "N5": {
+      "Text": "Don't you worry about it. Say, do you have something to eat? I'm starving.",
+      "Exit":  true
+    }
+  }
+}
